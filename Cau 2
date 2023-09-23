@@ -1,0 +1,33 @@
+<div id="le">
+        1
+    </div>
+    <div id="chan">
+        2
+    </div>
+    <div id="le">
+        3
+    </div>
+    <div id="chan">
+        4
+    </div>
+    <div id="le">
+        5
+    </div>
+    <div id="chan">
+        6
+    </div>
+    <input type="button" onclick="colorchanle()" value="Đổi màu" />
+    <script>
+        function colorchanle()
+        {
+            var divs = document.querySelectorAll("div");
+            for (var i = 0; i < divs.length; i++) {
+                if (i % 2 == 0) {
+                    divs[i].style.backgroundColor = "red";
+                }
+                else {
+                    divs[i].style.backgroundColor = "blue";
+                }
+            }
+        }
+    </script>
