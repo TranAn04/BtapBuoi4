@@ -1,0 +1,16 @@
+<BODY>
+    <p>In số</p>
+    <input type="text" id="msg" size="3" /><br />
+    <input type="button" value="print" onclick="Inso()" />
+    <p id="printC"></p>
+    <script language="Javascript">
+        function Inso()
+        {
+            var a = parseInt(document.getElementById('msg').value);
+            for (var i = 1; i <= a; i++)
+            {
+                document.getElementById('printC').innerHTML += i+" ";
+            }
+        }
+    </script>
+</BODY>
